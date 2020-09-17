@@ -94,6 +94,9 @@ body{
         flex-wrap: wrap;
         max-width: 300px;
         margin-top: 26px;
+        .ball + .ball{
+            margin-left: 1rem;
+        }
     }
 }
 .field-football{

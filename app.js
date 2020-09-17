@@ -117,6 +117,7 @@ function enterDroppable(elem,ball) {
       let clonedBall = ball.cloneNode(true);
       clonedBall.classList.add('js-static');
       clonedBall.style="";
+      clonedBall.classList.remove('js-draggable');
       document.querySelector(`.js-${teamName}-players`).append(clonedBall)
     }
   }

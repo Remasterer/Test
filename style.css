@@ -92,6 +92,10 @@ body {
   margin-top: 26px;
 }
 
+.header-football__players .ball + .ball {
+  margin-left: 1rem;
+}
+
 .field-football {
   position: relative;
   display: -webkit-box;
