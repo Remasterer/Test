@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.football {
+    padding-top: 3.8rem;
+    min-height: 100vh;
+    margin: 0 auto;
+    // .football__header
+
+    &__header {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+
+    // .football__field
+
+    &__field {
+        position: relative;
+        margin-top: 1.6rem;
+        min-height: 300px;
+        width: 100%;
+        max-width: 1200px ;
+        margin: 0 auto;
+        background: #709B5E;
+        border-radius: 20px;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: #BDCEB6;
+            border-radius: 50%;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100%;
+            background: #BDCEB6;
+        }
+    }
+}
+.header-football {
+
+
+
+    // .header-football__sub-title
+
+    &__sub-title {
+        font-size: 24px;
+    }
+
+    // .header-football__score
+
+    &__score {
+        padding: 0 100px;
+        
+    }
+
+    // .header-football__title
+
+    &__title {
+        font-size: 54px;
+    }
+
+    // .header-football__score-info
+
+    &__score-info {
+        font-size: 54px;
+    }
+
+    // .header-football__right
+
+    &__players{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 300px;
+        margin-top: 26px;
+    }
+}
+.field-football{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 640px;
+    &__center{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 74px;
+        border: 5px solid #BDCEB6;
+        border-radius: 50%;
+    }
+    &__goal{
+        min-height: 382px;
+        width: 150px;
+        background:#BDCEB6;
+    }
+}
+.ball{
+    position: absolute;
+    border-radius: 50%;
+    padding: 12px 18px;
+    text-transform: uppercase;
+    width: fit-content;
+    font-size: 13px;
+    cursor: pointer;
+    &.e--orange{
+        right: 20%;
+        top: 70%;
+        color: #fff;
+        background: #E58F1F;
+    }
+    &.e--yellow{
+        left: 12%;
+        top: 50%;
+        color: #000000;
+        background: #EBFB10;
+    }
+    &.e--blue{
+        left: 32%;
+        top: 30%;
+        color: #fff;
+        padding: 10px 12px;
+        background: #214BF2;
+    }
+    &.e--green{
+        right: 20%;
+        top: 12%;
+        color: #fff;
+        background: #75E23F;
+    }
+    &.e--purple{
+        background: #E23FB7;
+    color: #fff;
+    left: 58%;
+    top: 20%;
+    }
+}
+.ball.js-static{
+    position: static;
+}

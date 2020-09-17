@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="football">
+        <div class="football__header header-football">
+            <div class="header-football__left ">
+                <h3 class="header-football__sub-title">
+                    In the left goal
+                </h3>
+                <div class="js-left-players header-football__players"></div>
+            </div>
+            <div class="header-football__score">
+                <h1 class="header-football__title">
+                    SCORE
+                </h1>
+                <div class="header-football__score-info">
+                    <span class="js-left-team">
+                        0
+                    </span>
+                    :
+                    <span class="js-right-team">
+                        0
+                    </span>
+                </div>
+            </div>
+            <div class="header-football__right">
+                <h3 class="header-football__sub-title">
+                    In the right goal
+                </h3>
+                <div class="js-right-players header-football__players"></div>
+            </div>
+        </div>
+        <div class="football__field field-football js-drag-zone">
+            <div class="field-football__goal js-droppable" data-team="left">
+            </div>
+            <span class="field-football__center"></span>
+
+            <div class="ball e--yellow js-draggable">
+                B
+            </div>
+
+            <div class="ball e--purple js-draggable">
+                A
+            </div>
+
+            <div class="ball e--blue js-draggable">
+                SAPN
+            </div>
+            <div class="ball e--green js-draggable">
+                I
+            </div>
+
+            <div class="ball e--orange js-draggable">
+                P
+            </div>
+
+            <div class="field-football__goal js-droppable " data-team="right">
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
